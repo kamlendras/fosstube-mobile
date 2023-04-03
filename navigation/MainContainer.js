@@ -10,11 +10,13 @@ import Home from './screens/Home';
 import Play from './screens/Play';
 import Library from './screens/Library';
 import People from './screens/People';
+import Homeicon from '../assets/Home.svg';
+import HomeOutline from '../assets/HomeOuline.svg';
 
 const customTabBarStyle = {
-  activeTintColor: 'black',
-  inactiveTintColor: 'black',
-  backgroundColor: 'black',
+  activeTintColor: '#1e88e5',
+  inactiveTintColor: '#616161',
+  backgroundColor: 'blue',
 }
  const Tab = createBottomTabNavigator();
 function MainContainer() {
@@ -78,7 +80,8 @@ return (
           </View>
       )
   }}
-  component={Home}/>
+  component={Home}
+  />
   <Tab.Screen
    useHeaderHeight={false} 
   name="People"
