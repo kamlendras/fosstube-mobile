@@ -9,7 +9,9 @@
 
 import { createStackNavigator, TransitionSpecs,
    HeaderStyleInterpolators, CardStyleInterpolators } from "@react-navigation/stack";
-   import { Stack, FAB } from "@react-native-material/core";
+   import {  FAB } from "@react-native-material/core";
+  //  import { Stack} from "@react-native-material/core";
+
 import Iconx from "@expo/vector-icons/MaterialCommunityIcons";
 
 import { StatusBar,View,StyleSheet,Text,Easing } from 'react-native';
@@ -29,6 +31,7 @@ import MainContainer from './navigation/MainContainer';
 import {SafeAreaProvider} from 'react-native-safe-area-context' ;
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+import Logow from './assets/logow'
 const Stack = createNativeStackNavigator();
 
 const config = {
@@ -120,7 +123,7 @@ export default function App() {
     color="#212121"
     tintColor="white"
     leading={props => (
-      <IconButton icon={props => <Entypo name="code" size={24} {...props} />}
+      <IconButton icon={props => <Logow width={30} height={30}{...props} />}
        {...props} />
     )}
     trailing={props => (
@@ -132,8 +135,7 @@ export default function App() {
           <View style={styles2.container}>
           <Dialog.Container visible={visible}>
         <Dialog.Title>Connect to a device</Dialog.Title>
-        <Dialog.Description>
-          No device found
+        <Dialog.Description>searching for devices
         </Dialog.Description>
         <Dialog.Description><MaterialIcons name="connected-tv" size={20} color="black" /> Link with TV code
         </Dialog.Description>
