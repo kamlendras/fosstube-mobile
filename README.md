@@ -12,8 +12,12 @@ Note : We do not accept PR from any other ui library.
 Currently, we have not uploaded FossTube to Play Store / Apple Store / F-Droid 
 If you want to test our app then try building it from source
 
-## Donate
-If you want to get this application developed faster than consider donating
 
+### Donate
+If you like this project, please consider donating so we can keep this project running forever!
+
+<a href="https://www.buymeacoffee.com/ksingh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me a Coffee" height="28" width="119"></a>
+<a href="https://liberapay.com/ksingh" target="_blank"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg?style=for-the-badge" alt="Liberapay"></a>
+</div>
 
 
